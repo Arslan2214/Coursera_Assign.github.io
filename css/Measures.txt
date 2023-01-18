@@ -1,0 +1,3 @@
+Computer = 992px or above
+Tablet = 768px to 991px
+Mobile = 767px or less
