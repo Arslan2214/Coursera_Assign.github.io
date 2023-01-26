@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 25px;
+}
+:root{
+    --blk: rgba(26, 33, 40, 0.5);
+}
+#top{
+    /* visibility: hidden; */
+    height: 7vh;
+    width: 7vh;
+    background-color: white;
+    box-shadow: inset 1px 1px 3px 1px gray, 0px 1px 1px 0px black;
+    border-radius: 6px;
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+}
+nav{
+    background-color: var(--blk);
+    height: 13vh;
+    padding: 10px;
+    border: 3px solid rgb(9, 9, 9,0.8);
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+}
+#btn{
+    background-color: transparent;
+    width: 80px;
+    height: 10vh;
+    top: -5px;
+    border: 5px solid rgb(9, 9, 9,0.8);
+    border-radius: 6px;
+    display: none;
+}
+#btn ion-icon{
+    height: 100%;
+    width: 100%;
+}
+#btn:hover{
+    border: 5px solid rgb(255, 255, 255);
+    color: white;
+}
+nav p{
+    color: rgb(9, 9, 9,0.8);
+    font-size: 2.2em;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px 1px rgb(9, 9, 9,0.8);
+}
+#menu{
+    transition: all 1s;
+    width: 100%;
+    position: relative;
+    right: 0;
+    border-radius: 6px;
+    border: 2px solid rgb(9, 9, 9,0.8);
+    opacity: 1;
+    z-index: 0;
+    display: none;
+}
+a{
+    text-decoration: none;
+    font-weight: 600;
+}
+#menu ul{
+    text-align: center;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.ele{
+    
+    margin: 0.5vh;
+    color: rgb(34, 50, 67,0.5);
+}
+.line{
+    width: 90%;
+}
+main{
+    margin: 0px 25px;
+    text-align: center;
+    padding: 20px;
+    z-index: -1;
+}
+main h1{
+    font-size: 1.8em;
+    margin: 1vh auto 6vh;
+}
+#cnt, #cnt1,#cnt2{
+    background-color: var(--blk);
+    border-radius: 3px;
+}
+#cnt h4,#cnt1 h4,#cnt2 h4{
+    font-size: 1.4em;
+    margin-top: 0.5vh;
+}
+#cnt p,#cnt1 p,#cnt2 p{
+    padding: 25px;
+    text-align: left;
+}
+
+@media(max-width:900px){
+    #btn{
+        display: inline-block;
+    }
+    
+}
